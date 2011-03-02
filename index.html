@@ -1,42 +1,54 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  
-    <title>Colors</title>
-    <!-- https://github.com/briancollins/color-clock -->
-    <script type="text/javascript" src="jquery.js"></script>
+    <title>color clock with time zones</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
     <script type="text/javascript" src="animate.js"></script>
     <script type="text/javascript" src="colors.js"></script>
     <link rel="stylesheet" href="colors.css" type="text/css" media="screen" />
   </head>
   <body>
-    <div id="content">
-      <div id="clock">
-        <div class="digit" id="digit1">
-          0
-        </div>
-        <div class="digit" id="digit2">
-          0
-        </div>
-        <div class="colon" id="colon1">
-          :
-        </div>
-        <div class="digit" id="digit3">
-          0
-        </div>
-        <div class="digit" id="digit4">
-          0
-        </div>
-        <div class="colon" id="colon2">
-          :
-        </div>
-        <div class="digit" id="digit5">
-          0
-        </div>
-        <div class="digit" id="digit6">
-          0
-        </div>
+    <div id="wrap">
+      <div id="local" class="tzone">
+        <span class="digit" id="localhour1">0</span >
+        <span class="digit" id="localhour2">0</span >
+        <span class="colon" id="localcolon1">:</span >
+        <span class="digit" id="localminute1">0</span >
+        <span class="digit" id="localminute2">0</span >
+        <span class="colon" id="localcolon2">:</span >
+        <span class="digit" id="localsecond1">0</span >
+        <span class="digit" id="localsecond2">0</span >
+      </div>
+      <div id="london"  class="tzone">
+        <span class="digit" id="londonhour1">0</span >
+        <span class="digit" id="londonhour2">0</span >
+        <span class="colon" id="londoncolon1">:</span >
+        <span class="digit" id="londonminute1">0</span >
+        <span class="digit" id="londonminute2">0</span >
+        <span class="colon" id="londoncolon2">:</span >
+        <span class="digit" id="londonsecond1">0</span >
+        <span class="digit" id="londonsecond2">0</span >
+      </div>
+      <div id="ny"  class="tzone">
+        <span class="digit" id="nyhour1">0</span >
+        <span class="digit" id="nyhour2">0</span >
+        <span class="colon" id="nycolon1">:</span >
+        <span class="digit" id="nyminute1">0</span >
+        <span class="digit" id="nyminute2">0</span >
+        <span class="colon" id="nycolon2">:</span >
+        <span class="digit" id="nysecond1">0</span >
+        <span class="digit" id="nysecond2">0</span >
+      </div>
+      <div id="tokyo"  class="tzone">
+        <span class="digit" id="tokyohour1">0</span >
+        <span class="digit" id="tokyohour2">0</span >
+        <span class="colon" id="tokyocolon1">:</span >
+        <span class="digit" id="tokyominute1">0</span >
+        <span class="digit" id="tokyominute2">0</span >
+        <span class="colon" id="tokyocolon2">:</span >
+        <span class="digit" id="tokyosecond1">0</span >
+        <span class="digit" id="tokyosecond2">0</span >
       </div>
     </div>
   </body>
